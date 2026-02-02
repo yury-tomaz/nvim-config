@@ -1,0 +1,24 @@
+# Gerado pelo lazy.nvim
+.lazy/
+lazy/
+packer_compiled.lua
+
+# Arquivos de swap, backup e undo do Neovim
+*.swp
+*.swo
+*~
+*.un~
+
+# Arquivos de sessão
+Session.vim
+session/
+
+# Diretório de undo
+undodir/
+
+# Cache
+luacache/
+*.log
+
+# Configurações locais (boa prática)
+local_*.lua

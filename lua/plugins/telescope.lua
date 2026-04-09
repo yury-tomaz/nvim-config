@@ -64,8 +64,11 @@ return {
       },
     })
 
-    -- Load extensions
-    telescope.load_extension("fzf")
+    -- Load extensions (fzf requires native build: run `make` in telescope-fzf-native.nvim if missing)
+    local ok, _ = pcall(telescope.load_extension, "fzf")
+    if not ok then
+      vim.notify("telescope-fzf-native: run 'make' in the plugin dir to enable fzf sorting", vim.log.levels.WARN)
+    end
 
     -- Keymaps
     local builtin = require("telescope.builtin")

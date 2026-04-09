@@ -45,7 +45,10 @@ return {
       { "<leader>f", group = "Find (Telescope)" },
       { "<leader>h", group = "Harpoon" },
       { "<leader>j", group = "Java" },
+      { "<leader>g", group = "Git" },
       { "<leader>n", group = "No highlight" },
+      { "<leader>p", group = "PlantUML" },
+      { "<leader>s", group = "Signature/Search" },
     })
   end,
 }
